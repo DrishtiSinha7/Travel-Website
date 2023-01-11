@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Travel
+        </title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" type="image/x-icon" href="photos/iconfinal1.png"
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        
+    </head>
+    <body>
+
+        <!-- ---Navigation---- -->
+
+        <div class="navi">
+            <nav>
+                <a href= #section1 class="home">Home</a> 
+                <a href=#contact class="contact">When To Visit</a>
+                <div class="dropdown">          
+                    <a class="dropbtn">Destinations </a>
+                    <div class="dropdown-content">
+                        <a href="#trip1">Mussoorie</a>
+                        <a href="#trip2">Dehradun</a>
+                    </div>     
+                </div>      
+            </nav>
+        </div>
+
+    <!-- ---Home page---- -->
+           
+       <div class="bg" id="section1">
+           <div class="mainbody">
+                <h1><span class="deheradun">U T T A R A K H A N D</span><div class="roller">
+                    <span id="rolltext">Adventure
+                        Culture<br>
+                        Beauty<br>
+                        <span id="god">The land of Gods!</span>
+                </div>
+                </h1>
+           </div>
+       </div>
+
+       <!--  Scrol up button -->
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+       <script>
+            let mybutton = document.getElementById("myBtn");
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction(){
+                if(document.body.scrollTop >20 || document.documentElement.scrollTop >20 ){
+                    mybutton.style.display ="block";
+                }
+                else{
+                    mybutton.style.display="none";
+                }
+            }
+            function topFunction(){
+                document.documentElement.scrollTop =0;
+            }
+       </script>
+
+       <!-- ---Uttrakhand---- -->
+
+       
+       <div class="bg2" id="section2">
+            <div class="doonbody">
+                <span>Uttarakhand, which is in the Himalayan region, is one of the most picturesque states in the country and has tourist destinations that range from hill stations to popular towns to pilgrim destinations. Rishikesh, a major centre for yoga study, was made famous by the Beatles’ 1968 visit. The city hosts the evening Ganga Aarti, a spiritual gathering on the sacred Ganges River. The state's forested Jim Corbett National Park shelters Bengal tigers and other native wildlife. Here are some fun destinations to plan your trip!</span>
+            </div>
+            <div class="Mussoorie" id="trip1">
+                <span class="Mussoorie1">Mussoorie</span>
+            </div>
+        </div>
+
+        <!-- ---Mussoorie slide show---- -->
+  
+        <div class="slideshow-container" >
+ 
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div> 
+                <img src="photos/mussoorie/1.jpg" style="width:100%">
+            </div>
+       
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div> 
+                <img src="photos/mussoorie/2 (2).jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div> 
+                <img src="photos/mussoorie/33.jpg" style="width: 100%">     
+            </div>
+
+            
+
+            <div>
+                <p class="mussorietext"><strong>Mussoorie</strong> is at an average altitude of 2,005 metres (6,578 ft). To the northeast are the Himalayan snow ranges, and to the south, the Doon Valley and Shiwalik ranges. The second highest point is the original Lal Tibba in Landour, with a height of over 2,275 m (7,464 ft). Mussoorie is popularly known as The Queen of the Hills. A captivating paradise for leisure travellers and honeymooners, it is a perfect summer resort. Located on a 15-km-long horseshoe ridge with the grand Himalayas as a backdrop, Mussoorie spreads across at a height of 2,000 m above sea level. From this vantage point, it offers scenic views of Himalayas peaks in Western Garhwal. Here are some fun activities,</p>
+            </div>
+           
+        </div>
+    
+        <script>
+           var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); 
+}
+        </script>
+
+     <!-- MUSSOORIE ACTIVITY -->
+        <div class="mussoorieactivity">
+            <div class="treck">
+                <img class="treckimg" src="photos/mussoorie/treck.jpg">
+                <div class="overlay1"> <div class="trecktext">trekking in Mussoorie to make your holiday more exciting. The moderate altitude of the area makes the chances of altitude-induced sickness null and void. Most of the hikes starting from the hill station are short and easy.</div> </div>
+            </div>
+            <div class="rock">
+                <img class="rockimg" src="photos/mussoorie/rock.jpg" >
+                <div class="overlay2"> <div class="rocktext">One of the main attractions of Mussoorie is rock climbing. Many organizations organize this adventure. Every type of precaution is taken so that the tourist does not face any issues while climbing their way to the top</div>
+                </div>
+            </div>
+            <div class="para">
+                <img class="paraimg" src="photos/mussoorie/94yf1lyt9z36l554wzvav12y7sgk_p2 (1).jpeg">
+                <div class="overlay3"> <div class="paratext">Located just 15 kms away from Mussoorie, the Mussoorie Lake is famous for being one of the most picturesque locales in Uttarakhand for offering thrilling paragliding experiences.</div>
+                </div>
+            </div> 
+        </div>
+
+        <!-- --- Deheradun slide show---- -->
+        <div class="dheradhun1" id="trip2">Dehradun</div>
+
+        <!-- --- Deheradun slide show---- -->
+
+        <div class="slideshow-container" >
+ 
+            <div class="mySlides1 fade">
+                <div class="numbertext">1 / 3</div> 
+                <img src="photos/deheradun/1.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides1 fade">
+                <div class="numbertext">2 / 3</div> 
+                <img src="photos/deheradun/2.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides1 fade">
+                <div class="numbertext">3 / 3</div> 
+                <img src="photos/deheradun/3.jpg" style="width: 100%">     
+            </div>
+          
+            <a class="prev1" onclick="plusSlides1(-1)">&#10094;</a>
+            <a class="next1" onclick="plusSlides1(1)">&#10095;</a>
+           
+            <div class="dotstyle1" style="text-align: center;">
+                <span class="dot1" onclick="currentSlide1(1)"></span>
+                <span class="dot1" onclick="currentSlide1(2)"></span>
+                <span class="dot1" onclick="currentSlide1(3)"></span>
+            </div>
+          
+            <div>
+                <p class="mussorietext"><strong>Dehradun</strong> is the capital of the Indian state of Uttarakhand, near the Himalayan foothills. At its core is the 6-sided Ghanta Ghar clock tower. To the southwest is Paltan Bazaar, a busy shopping area. Just east is the Sikh temple Gurdwara Nanaksar, topped with ornate white and golden domes. In Clement Town to the city’s southwest, Mindrolling Monastery is a Tibetan Buddhist center with shrine rooms in its Great Stupa. Here are some fun activities,</p>
+            </div>
+           
+        </div>
+          
+        <script>
+            let slideIndex1 = 1;
+            showSlides1(slideIndex1);
+          
+            function plusSlides1(n){
+                showSlides1(slideIndex1 += n);
+            }
+          
+            function currentSlide1(n){
+                showSlides1(slideIndex1 = n);
+            }
+          
+            function showSlides1(n) {
+                let i;
+                let slides1 = document.getElementsByClassName("mySlides1");
+                let dots1 = document.getElementsByClassName("dot1");
+                if (n > slides1.length) {slideIndex1 = 1}
+                if (n < 1) {slideIndex1 = slides1.length}
+                for (i = 0; i < slides1.length; i++) {
+                    slides1[i].style.display = "none";
+                }
+                for (i = 0; i < dots1.length; i++) {
+                    dots1[i].className = dots1[i].className.replace(" active", "");
+                }
+                slides1[slideIndex1-1].style.display = "block";
+                dots1[slideIndex1-1].className += " active";
+            }
+        </script>
+
+        <!-- Deheradun ACTIVITY -->
+
+        <div class="doonactivity">
+            <div class="fri">
+                <img class="friimg" src="photos/deheradun/activity/FRI.jpg">
+                <div class="overlay4"> <div class="trecktext">An educational and tourism destination, the Forest Research Institute (FRI) is in the scenic city of Dehradun, surrounded by verdant forests. This educational centre is renowned for its breath-taking beauty, the variety of flora, and its exquisite architecture.</div> </div>
+            </div>
+            <div class="paltan">
+                <img class="paltanimg" src="photos/deheradun/activity/57751048 (1).jpg" >
+                <div class="overlay5"> <div class="rocktext">Situated in proximity to Dehradun&#8217;s Clock Tower, This shopping paradise sells clothes, shoes and bags. Shoppers can also pick various kinds of spices here along with several other food items.</div>
+                </div>
+            </div>
+            <div class="temple">
+                <img class="templeimg" src="photos/deheradun/activity/temple.jpg">
+                <div class="overlay6"> <div class="paratext">A large Tibetan settlement and the World's Largest Stupa, of the re-established Mindroling Monastery from Tibet, is situated in Clement Town. It is the highest Mindroling Monastery in the worldThere is also a 103 feet (31 m) high statue of Buddha is dedicated to the Dalai Lama.</div>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="footer">
+            <p><strong>&#128231; : <i>itsdridhti5@gmail.com</i></strong>, <a href="https://www.instagram.com/_drishti_sinha?r=nametag" class="fa fa-instagram"></a>
+                <a href="https://www.linkedin.com/in/drishti-sinha-b4b477226" class="fa fa-linkedin"></a></p>
+        </div>
+
+        <!--  Contact Me-->
+
+        <div class="contactme" >
+            <p class="ctext" id="contact">When To Visit</p>
+            <div class="book">Summer is the best climate to visit Uttarakhand. The weather is pleasant and comfortable, with temperatures not going beyond 35 degree Celsius during the day and never dipping below 20 degree Celsius. Summer brings out the beauty in Uttarakhand and you will find most tourists heading here.</div>
+            <div class="book2">If you like the cold, then head to Uttarakhand in winter. In fact, we suggest that you head there even if you are not particularly crazy about the cold weather - the beauty of the place will definitely convert you. Bundle up in your woollens to keep yourself well-protected from the low temperatures. Daytime will reach a maximum of 15 degree Celsius and in some places the lowest could go to up to 3 degrees Celsius. If you are lucky, you could experience snowfall too.</div>
+            <div class="book3" ><i>So, Book Your <a class="ticket" href="https://www.makemytrip.com/holidays-india/uttarakhand-travel-packages.html">Tickets</a> Now!!!</i></div>
+        </div>
+
+    </body>
+</html>

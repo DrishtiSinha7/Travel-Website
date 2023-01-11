@@ -1,0 +1,502 @@
+body,html{
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+.bg{
+    background-image: url("photos/rhema-kallianpur-t0GpJ2cdJuo-unsplash.jpg");
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.bg2{
+    background-color: rgb(62, 85, 70);
+}
+.navi{
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: opacity 0.15s;
+    background-color: rgb(226, 231, 237);
+    text-decoration: solid;
+    font-family: 'Varela Round', sans-serif;
+}
+.home{
+    color:#04AA6D;
+    text-decoration: none;
+    transition: opacity 0.15s;
+    padding-left: 15px;
+}
+.contact:hover{
+    cursor: pointer;
+    color: #3e8e41;
+}
+.contact:active{
+    opacity: 0.5;
+}
+.home:hover{
+    cursor: pointer;
+    color: #3e8e41;
+}
+.home:active{
+    opacity: 0.15s;
+}
+.mainbody{
+    height: 100vh;
+    font-size: 40px;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    
+    justify-content: center;
+    text-align: center;
+}
+.deheradun{
+    color:rgb(185, 163, 52);
+    font-size: 60px;
+    font-family: 'Varela Round', sans-serif; 
+}
+
+.h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.roller{
+    height: 4.125rem;
+    line-height: 4rem;
+    position: relative;
+    overflow: hidden; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(34, 139, 34, 0.676);
+}
+
+#god{
+font-size: 1rem;
+  font-style: italic;
+  letter-spacing: 1rem;
+  margin-top: 0;
+  color: #404242;
+  
+}
+.roller #rolltext {
+    position: absolute;
+    top: 0;
+    animation: slide 5s infinite;  
+  }
+  @keyframes slide {
+    0%{
+      top:0;
+    }
+    25%{
+      top: -4rem;    
+    }
+    50%{
+      top: -8rem;
+    }
+    72.5%{
+      top: -12.25rem;
+    }
+  }
+
+  @media screen and (max-width: 600px){
+    h1{
+    text-align:center;
+    text-transform: uppercase;
+    color: #F1FAEE; 
+    font-size: 2.125rem;
+  }
+    
+    .roller{
+    height: 2.6rem; 
+    line-height: 2.125rem;  
+    }
+    
+    #god {
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+    }
+    
+    .roller #rolltext {  
+    animation: slide-mob 5s infinite;  
+  }
+    
+    @keyframes slide-mob {
+    0%{
+      top:0;
+    }
+    25%{
+      top: -2.125rem;    
+    }
+    50%{
+      top: -4.25rem;
+    }
+    72.5%{
+      top: -6.375rem;
+    }
+  }
+  }
+
+
+  .ctext,.dheradhun1, .Mussoorie1{
+    color: white;
+    background-color: #3e5546;
+    font-family: 'Varela Round', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 40px;
+    padding-left:45%;              
+}
+.doonbody{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 39px;
+}
+.contact,.dropbtn {
+    background-color: transparent;
+    font-size: 20px;
+    border: none;
+    font-family: 'Varela Round', sans-serif;
+    color: #04AA6D;
+    float: right;
+         
+}
+.dropbtn{
+    padding-right: 30px;
+}
+.contact{
+    padding-right: 40px;
+    text-decoration: none;
+}
+.dropdown {
+    position: relative;
+    display: inline;       
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 16px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 1200px;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {color: #3e8e41;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {
+    cursor: pointer; 
+    color: #3e8e41;      
+}
+.slideshow-container{
+    padding-top: 30px;   
+    position: relative;
+    margin: auto;
+    background-color: #3e5546;   
+    margin-bottom: 0;
+}
+.mySlides,.mySlides1{
+    display: none;
+}
+.prev1, .next1{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next1{
+    right: 5%;
+    border-radius: 3px 0 0 3px;
+}
+.prev1{
+    left:5%;
+}
+.prev1:hover, .next1:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.numbertext{
+    color: #f2f1f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    padding-top: 50px;
+    position: absolute;
+    top: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+ .dot1{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;    
+}
+.dotstyle{
+    text-align: center;
+}
+.active, .dot1:hover {
+    background-color: #717171;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: .15s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.mussorietext{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 39px;
+    margin-bottom: 0;
+}
+.mussoorieactivity, .doonactivity{   
+    background-color: #3e5546;
+    margin-bottom: 0;   
+}
+.doonactivity{
+    padding-bottom: 35px;  
+}
+.treck, .fri{
+    display: inline-block;
+    position: relative;
+    text-align: centre;   
+}
+.rock,.paltan{
+    display: inline-block;
+    position: relative;
+    text-align: centre;  
+}
+.para,.temple{
+    display: inline-block;
+    position: relative;
+    text-align: centre;
+}
+.treckimg, .friimg{
+    display: block;
+    width: 470px;
+    height: auto;
+    margin-left: 39px;
+}
+.rockimg, .paltanimg{
+    display: block;
+    width: 470px;
+    height: auto; 
+}
+.paraimg, .templeimg{
+    display: block;
+    width: 470px;
+    height: auto;   
+}
+.overlay1, .overlay4{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+    margin-left: 39px;
+}
+.overlay2, .overlay5{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black; 
+}
+.overlay3, .overlay6{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;  
+}
+.treck:hover, .fri:hover{
+    opacity: 1;
+}
+.rock:hover, .paltan:hover{
+    opacity: 1;
+}
+.para:hover, .temple:hover{
+    opacity: 1;
+}
+.overlay1:hover, .overlay4:hover{
+    opacity: 0.8;
+}
+.overlay2:hover, .overlay5:hover{
+    opacity: 0.8;
+}
+.overlay3:hover, .overlay6:hover{
+    opacity: 0.8;
+}
+.trecktext, .fritext{
+    position:absolute;
+    font-family: 'Julius Sans One', sans-serif;
+    color:whitesmoke;
+    font-size: large;
+    font-weight: bold;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top:50%;
+    margin-left: 50%;
+}
+.rocktext, .paltantext{
+    position:absolute;
+    font-family: 'Julius Sans One', sans-serif;
+    color:whitesmoke;
+    font-size: large;
+    font-weight: bold;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top:50%;
+    margin-left: 50%;
+}
+.paratext, .templetext{
+    position:absolute;
+    font-family: 'Julius Sans One', sans-serif;
+    color:whitesmoke;
+    font-size: large;
+    font-weight: bold;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top:50%;
+    margin-left: 50%
+}
+#myBtn{
+    display: none;
+    position: fixed;
+    bottom: 70px;
+    left: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #04AA6D;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+#myBtn:hover{
+    background-color: white;
+    color: #04AA6D;
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom:0;
+    width: 100%;
+    background-color: #3e8e41;
+    color: white;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+}
+.contactme{
+    background-color: #3e5546;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    padding-bottom: 60px;  
+}
+.ctext{
+    display: inline;
+}
+.mail{
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+}
+.fa{
+    margin-left: 20px;
+    font-size: 20px;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+}
+.fa:hover{
+    opacity: 0.7;
+}
+.fa-instagram{
+    color: white;
+    background: #3e8e41;
+}
+.fa-linkedin{
+    color: white;
+    margin-left: 25px;
+    background: #3e8e41;
+}
+.book{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 39px;
+    margin-bottom: 0;
+}
+.book2,.book3{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 39px;
+    margin-bottom: 0;
+}
+.book3{
+    text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
+}
+.ticket{
+    text-decoration:none;
+    color: white;
+    font-weight: bolder;
+}
